@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "librlottie",
+        "repositoryURL": "https://github.com/SDWebImage/librlottie-Xcode.git",
+        "state": {
+          "branch": null,
+          "revision": "4ae1ba205910c804ee2d4cd7dd7f122964fe3aad",
+          "version": "0.2.1"
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "76dd4b49110b8624317fc128e7fa0d8a252018bc",
+          "version": "5.11.1"
+        }
+      },
+      {
+        "package": "SDWebImageLottieCoder",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImageLottieCoder",
+        "state": {
+          "branch": null,
+          "revision": "c9f65679a9b0510b89673507f548a7c0f17ba95f",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

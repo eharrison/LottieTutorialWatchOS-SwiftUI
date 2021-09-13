@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C4F559726EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6C4F559626EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C4F559D26EEE5FC009F4C96 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F559B26EEE5FC009F4C96 /* Interface.storyboard */; };
+		6C4F559F26EEE5FD009F4C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F559E26EEE5FD009F4C96 /* Assets.xcassets */; };
+		6C4F55A626EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C4F55A526EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C4F55AB26EEE5FD009F4C96 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F55AA26EEE5FD009F4C96 /* HostingController.swift */; };
+		6C4F55AD26EEE5FD009F4C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F55AC26EEE5FD009F4C96 /* ContentView.swift */; };
+		6C4F55AF26EEE5FD009F4C96 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F55AE26EEE5FD009F4C96 /* ExtensionDelegate.swift */; };
+		6C4F55B126EEE5FD009F4C96 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F55B026EEE5FD009F4C96 /* NotificationController.swift */; };
+		6C4F55B326EEE5FD009F4C96 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F55B226EEE5FD009F4C96 /* NotificationView.swift */; };
+		6C4F55B526EEE5FD009F4C96 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F55B426EEE5FD009F4C96 /* ComplicationController.swift */; };
+		6C4F55B726EEE5FE009F4C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F55B626EEE5FE009F4C96 /* Assets.xcassets */; };
+		6C4F55BA26EEE5FE009F4C96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F55B926EEE5FE009F4C96 /* Preview Assets.xcassets */; };
+		6C4F596C26EEED92009F4C96 /* SDWebImageLottieCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 6C4F596B26EEED92009F4C96 /* SDWebImageLottieCoder */; };
+		6C4F596E26EEF0AD009F4C96 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F596D26EEF0AD009F4C96 /* LottieView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C4F559826EEE5FC009F4C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C4F558C26EEE5FC009F4C96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C4F559526EEE5FC009F4C96;
+			remoteInfo = "LottieTutorialWatchOS-SwiftUI WatchKit App";
+		};
+		6C4F55A726EEE5FD009F4C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C4F558C26EEE5FC009F4C96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C4F55A426EEE5FD009F4C96;
+			remoteInfo = "LottieTutorialWatchOS-SwiftUI WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C4F55C226EEE5FE009F4C96 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C4F55A626EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4F55C626EEE5FE009F4C96 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6C4F559726EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C4F559226EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LottieTutorialWatchOS-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4F559626EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LottieTutorialWatchOS-SwiftUI WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4F559C26EEE5FC009F4C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6C4F559E26EEE5FD009F4C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C4F55A026EEE5FD009F4C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C4F55A526EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LottieTutorialWatchOS-SwiftUI WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4F55AA26EEE5FD009F4C96 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		6C4F55AC26EEE5FD009F4C96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C4F55AE26EEE5FD009F4C96 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6C4F55B026EEE5FD009F4C96 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6C4F55B226EEE5FD009F4C96 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		6C4F55B426EEE5FD009F4C96 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6C4F55B626EEE5FE009F4C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C4F55B926EEE5FE009F4C96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C4F55BB26EEE5FE009F4C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C4F55BC26EEE5FE009F4C96 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6C4F596D26EEF0AD009F4C96 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C4F55A226EEE5FD009F4C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4F596C26EEED92009F4C96 /* SDWebImageLottieCoder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C4F558B26EEE5FC009F4C96 = {
+			isa = PBXGroup;
+			children = (
+				6C4F559A26EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App */,
+				6C4F55A926EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension */,
+				6C4F559326EEE5FC009F4C96 /* Products */,
+				6C4F596A26EEED92009F4C96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C4F559326EEE5FC009F4C96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C4F559226EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI.app */,
+				6C4F559626EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App.app */,
+				6C4F55A526EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C4F559A26EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6C4F559B26EEE5FC009F4C96 /* Interface.storyboard */,
+				6C4F559E26EEE5FD009F4C96 /* Assets.xcassets */,
+				6C4F55A026EEE5FD009F4C96 /* Info.plist */,
+			);
+			path = "LottieTutorialWatchOS-SwiftUI WatchKit App";
+			sourceTree = "<group>";
+		};
+		6C4F55A926EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6C4F55AA26EEE5FD009F4C96 /* HostingController.swift */,
+				6C4F55AC26EEE5FD009F4C96 /* ContentView.swift */,
+				6C4F596D26EEF0AD009F4C96 /* LottieView.swift */,
+				6C4F55AE26EEE5FD009F4C96 /* ExtensionDelegate.swift */,
+				6C4F55B026EEE5FD009F4C96 /* NotificationController.swift */,
+				6C4F55B226EEE5FD009F4C96 /* NotificationView.swift */,
+				6C4F55B426EEE5FD009F4C96 /* ComplicationController.swift */,
+				6C4F55B626EEE5FE009F4C96 /* Assets.xcassets */,
+				6C4F55BB26EEE5FE009F4C96 /* Info.plist */,
+				6C4F55BC26EEE5FE009F4C96 /* PushNotificationPayload.apns */,
+				6C4F55B826EEE5FE009F4C96 /* Preview Content */,
+			);
+			path = "LottieTutorialWatchOS-SwiftUI WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6C4F55B826EEE5FE009F4C96 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6C4F55B926EEE5FE009F4C96 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C4F596A26EEED92009F4C96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C4F559126EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C4F55C726EEE5FE009F4C96 /* Build configuration list for PBXNativeTarget "LottieTutorialWatchOS-SwiftUI" */;
+			buildPhases = (
+				6C4F559026EEE5FC009F4C96 /* Resources */,
+				6C4F55C626EEE5FE009F4C96 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C4F559926EEE5FC009F4C96 /* PBXTargetDependency */,
+			);
+			name = "LottieTutorialWatchOS-SwiftUI";
+			packageProductDependencies = (
+				6C4F596926EEED3A009F4C96 /* SDWebImageLottieCoder */,
+			);
+			productName = "LottieTutorialWatchOS-SwiftUI";
+			productReference = 6C4F559226EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		6C4F559526EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C4F55C326EEE5FE009F4C96 /* Build configuration list for PBXNativeTarget "LottieTutorialWatchOS-SwiftUI WatchKit App" */;
+			buildPhases = (
+				6C4F559426EEE5FC009F4C96 /* Resources */,
+				6C4F55C226EEE5FE009F4C96 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C4F55A826EEE5FD009F4C96 /* PBXTargetDependency */,
+			);
+			name = "LottieTutorialWatchOS-SwiftUI WatchKit App";
+			productName = "LottieTutorialWatchOS-SwiftUI WatchKit App";
+			productReference = 6C4F559626EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6C4F55A426EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C4F55BF26EEE5FE009F4C96 /* Build configuration list for PBXNativeTarget "LottieTutorialWatchOS-SwiftUI WatchKit Extension" */;
+			buildPhases = (
+				6C4F55A126EEE5FD009F4C96 /* Sources */,
+				6C4F55A226EEE5FD009F4C96 /* Frameworks */,
+				6C4F55A326EEE5FD009F4C96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LottieTutorialWatchOS-SwiftUI WatchKit Extension";
+			packageProductDependencies = (
+				6C4F596B26EEED92009F4C96 /* SDWebImageLottieCoder */,
+			);
+			productName = "LottieTutorialWatchOS-SwiftUI WatchKit Extension";
+			productReference = 6C4F55A526EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C4F558C26EEE5FC009F4C96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6C4F559126EEE5FC009F4C96 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6C4F559526EEE5FC009F4C96 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6C4F55A426EEE5FD009F4C96 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 6C4F558F26EEE5FC009F4C96 /* Build configuration list for PBXProject "LottieTutorialWatchOS-SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C4F558B26EEE5FC009F4C96;
+			packageReferences = (
+				6C4F596826EEED3A009F4C96 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */,
+			);
+			productRefGroup = 6C4F559326EEE5FC009F4C96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C4F559126EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI */,
+				6C4F559526EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App */,
+				6C4F55A426EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C4F559026EEE5FC009F4C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4F559426EEE5FC009F4C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4F559F26EEE5FD009F4C96 /* Assets.xcassets in Resources */,
+				6C4F559D26EEE5FC009F4C96 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4F55A326EEE5FD009F4C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4F55BA26EEE5FE009F4C96 /* Preview Assets.xcassets in Resources */,
+				6C4F55B726EEE5FE009F4C96 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C4F55A126EEE5FD009F4C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4F55AD26EEE5FD009F4C96 /* ContentView.swift in Sources */,
+				6C4F55AB26EEE5FD009F4C96 /* HostingController.swift in Sources */,
+				6C4F55B126EEE5FD009F4C96 /* NotificationController.swift in Sources */,
+				6C4F55AF26EEE5FD009F4C96 /* ExtensionDelegate.swift in Sources */,
+				6C4F596E26EEF0AD009F4C96 /* LottieView.swift in Sources */,
+				6C4F55B326EEE5FD009F4C96 /* NotificationView.swift in Sources */,
+				6C4F55B526EEE5FD009F4C96 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C4F559926EEE5FC009F4C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C4F559526EEE5FC009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit App */;
+			targetProxy = 6C4F559826EEE5FC009F4C96 /* PBXContainerItemProxy */;
+		};
+		6C4F55A826EEE5FD009F4C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C4F55A426EEE5FD009F4C96 /* LottieTutorialWatchOS-SwiftUI WatchKit Extension */;
+			targetProxy = 6C4F55A726EEE5FD009F4C96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C4F559B26EEE5FC009F4C96 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C4F559C26EEE5FC009F4C96 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C4F55BD26EEE5FE009F4C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C4F55BE26EEE5FE009F4C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C4F55C026EEE5FE009F4C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LottieTutorialWatchOS-SwiftUI WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = VT33U5MQ8Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "LottieTutorialWatchOS-SwiftUI WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lottiefiles.LottieTutorialWatchOS-SwiftUI.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		6C4F55C126EEE5FE009F4C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LottieTutorialWatchOS-SwiftUI WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = VT33U5MQ8Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "LottieTutorialWatchOS-SwiftUI WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lottiefiles.LottieTutorialWatchOS-SwiftUI.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		6C4F55C426EEE5FE009F4C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VT33U5MQ8Q;
+				IBSC_MODULE = LottieTutorialWatchOS_SwiftUI_WatchKit_Extension;
+				INFOPLIST_FILE = "LottieTutorialWatchOS-SwiftUI WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lottiefiles.LottieTutorialWatchOS-SwiftUI.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		6C4F55C526EEE5FE009F4C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VT33U5MQ8Q;
+				IBSC_MODULE = LottieTutorialWatchOS_SwiftUI_WatchKit_Extension;
+				INFOPLIST_FILE = "LottieTutorialWatchOS-SwiftUI WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lottiefiles.LottieTutorialWatchOS-SwiftUI.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		6C4F55C826EEE5FE009F4C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT33U5MQ8Q;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lottiefiles.LottieTutorialWatchOS-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6C4F55C926EEE5FE009F4C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT33U5MQ8Q;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lottiefiles.LottieTutorialWatchOS-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C4F558F26EEE5FC009F4C96 /* Build configuration list for PBXProject "LottieTutorialWatchOS-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4F55BD26EEE5FE009F4C96 /* Debug */,
+				6C4F55BE26EEE5FE009F4C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C4F55BF26EEE5FE009F4C96 /* Build configuration list for PBXNativeTarget "LottieTutorialWatchOS-SwiftUI WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4F55C026EEE5FE009F4C96 /* Debug */,
+				6C4F55C126EEE5FE009F4C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C4F55C326EEE5FE009F4C96 /* Build configuration list for PBXNativeTarget "LottieTutorialWatchOS-SwiftUI WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4F55C426EEE5FE009F4C96 /* Debug */,
+				6C4F55C526EEE5FE009F4C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C4F55C726EEE5FE009F4C96 /* Build configuration list for PBXNativeTarget "LottieTutorialWatchOS-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4F55C826EEE5FE009F4C96 /* Debug */,
+				6C4F55C926EEE5FE009F4C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C4F596826EEED3A009F4C96 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageLottieCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C4F596926EEED3A009F4C96 /* SDWebImageLottieCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C4F596826EEED3A009F4C96 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */;
+			productName = SDWebImageLottieCoder;
+		};
+		6C4F596B26EEED92009F4C96 /* SDWebImageLottieCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C4F596826EEED3A009F4C96 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */;
+			productName = SDWebImageLottieCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6C4F558C26EEE5FC009F4C96 /* Project object */;
+}
