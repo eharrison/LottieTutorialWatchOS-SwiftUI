@@ -33,6 +33,16 @@ class LottieViewModel: ObservableObject {
         dataTask.resume()
     }
     
+    /// Loads animation data from local file
+    /// - Parameter filename: name of the local Lottie file
+    func loadAnimationFromFile(filename: String) {
+        let url = Bundle.main.url(forResource: filename, withExtension: "json")!
+        let data = try! Data(contentsOf: url)
+        DispatchQueue.main.async {
+            self.setupAnimation(with: data)
+        }
+    }
+    
     /// Decodify animation with given data
     /// - Parameter data: data of animation
     private func setupAnimation(with data: Data) {
