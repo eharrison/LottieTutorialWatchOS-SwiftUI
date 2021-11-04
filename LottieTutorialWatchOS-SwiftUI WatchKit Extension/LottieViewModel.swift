@@ -12,6 +12,9 @@ import SDWebImageLottieCoder
 class LottieViewModel: ObservableObject {
     @Published private(set) var image: UIImage = UIImage(named: "defaultIcon")!
     
+    /// Set false to disable looping the animation
+    var loop: Bool = true
+
     // MARK: - Animation
     
     private var coder: SDImageLottieCoder?
@@ -42,6 +45,26 @@ class LottieViewModel: ObservableObject {
             self.setupAnimation(with: data)
         }
     }
+
+    /// Start playing animation
+    func play() {
+        playing = true
+
+        animationTimer?.invalidate()
+        animationTimer = Timer.scheduledTimer(withTimeInterval: 0.05/speed, repeats: true, block: { (timer) in
+            guard self.playing else {
+                timer.invalidate()
+                return
+            }
+            self.nextFrame()
+        })
+    }
+    
+    /// Pauses animation
+    func pause() {
+        playing = false
+        animationTimer?.invalidate()
+    }
     
     /// Decodify animation with given data
     /// - Parameter data: data of animation
@@ -71,29 +94,16 @@ class LottieViewModel: ObservableObject {
         // make sure that current frame is within frame count
         // if reaches the end, we set it back to 0 so it loops
         if currentFrame >= coder.animatedImageFrameCount {
-            currentFrame = 0
+            // check if we are looping, set to 0 if so
+            if self.loop == true {
+                currentFrame = 0
+            } else {
+                // if we are playing once, basically reset everything
+                playing = false
+                animationTimer?.invalidate()
+            }
         }
         
         setImage(frame: currentFrame)
-    }
-    
-    /// Start playing animation
-    private func play() {
-        playing = true
-
-        animationTimer?.invalidate()
-        animationTimer = Timer.scheduledTimer(withTimeInterval: 0.05/speed, repeats: true, block: { (timer) in
-            guard self.playing else {
-                timer.invalidate()
-                return
-            }
-            self.nextFrame()
-        })
-    }
-    
-    /// Pauses animation
-    private func pause() {
-        playing = false
-        animationTimer?.invalidate()
     }
 }
